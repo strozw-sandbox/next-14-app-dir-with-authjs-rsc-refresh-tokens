@@ -3,18 +3,18 @@
 	"globalDependencies": [".env"],
 	"tasks": {
 		"build": {
-			"inputs": ["$TURBO_DEFAULT$", ".env", ".env.local"],
-			"persistent": true,
-			"cache": true
+			"persistent": false,
+      "cache": false
 		},
 		"start": {
-			"inputs": ["$TURBO_DEFAULT$", ".env", ".env.local"],
-			"dependsOn": ["^build"]
+      "dependsOn": ["nextjs-frontend#build"],
+			"persistent": true,
+      "cache": false
 		},
 		"dev": {
 			"inputs": ["$TURBO_DEFAULT$", ".env", ".env.local"],
 			"persistent": true,
-			"cache": false
+      "cache": false
 		}
 	}
 }
