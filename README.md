@@ -2,6 +2,21 @@
 
 forked from [AljazOblonsek/next-13-app-dir-rsc-refresh-tokens](https://github.com/AljazOblonsek/next-13-app-dir-rsc-refresh-tokens)
 
+## Setup
+
+- Install dependencies
+  ```bash
+  pnpm i
+  ```
+- Dev
+  ```
+  pnpm start
+  ```
+- Build & Preview
+  ```
+  pnpm start
+  ```
+
 ## Ref
 
 - https://authjs.dev/getting-started/authentication/credentials
