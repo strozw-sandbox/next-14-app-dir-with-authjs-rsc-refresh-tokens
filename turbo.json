@@ -1,16 +1,20 @@
 {
-  "$schema": "https://turbo.build/schema.json",
-  "tasks": {
+	"$schema": "https://turbo.build/schema.json",
+	"globalDependencies": [".env"],
+	"tasks": {
 		"build": {
-      "persistent": true,
-      "cache": true
-    },
+			"inputs": ["$TURBO_DEFAULT$", ".env", ".env.local"],
+			"persistent": true,
+			"cache": true
+		},
 		"start": {
+			"inputs": ["$TURBO_DEFAULT$", ".env", ".env.local"],
 			"dependsOn": ["^build"]
 		},
-    "dev": {
-      "persistent": true,
-      "cache": false
-    }
-  }
+		"dev": {
+			"inputs": ["$TURBO_DEFAULT$", ".env", ".env.local"],
+			"persistent": true,
+			"cache": false
+		}
+	}
 }
