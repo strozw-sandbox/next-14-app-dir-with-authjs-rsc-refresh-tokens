@@ -6,7 +6,9 @@
 	"scripts": {
 		"build": "turbo run build",
 		"start": "turbo run start",
-		"dev": "turbo run dev"
+		"dev": "turbo run dev",
+		"dev-api": "turbo run dev --filter=express-api",
+		"dev-next": "turbo run dev --filter=nextjs-frontend"
 	},
 	"keywords": [],
 	"author": "",
@@ -14,6 +16,7 @@
 	"packageManager": "pnpm@9.2.0+sha256.94fab213df221c55b6956b14a2264c21c6203cca9f0b3b95ff2fe9b84b120390",
 	"dependencies": {
 		"@biomejs/biome": "^1.8.0",
-		"turbo": "^2.0.2"
+		"turbo": "^2.0.2",
+		"zod": "^3.23.8"
 	}
 }
