@@ -1,0 +1,3 @@
+packages:
+  - './express-api'
+  - './nextjs-frontend'

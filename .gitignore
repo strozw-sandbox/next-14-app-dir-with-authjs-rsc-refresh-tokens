@@ -40,6 +40,5 @@ out/
 *.tsbuildinfo
 next-env.d.ts
 
-# misc
-/.pnp
-.pnp.js
+# turbo
+.turbo
